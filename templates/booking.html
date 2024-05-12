@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Interior Design Booking</title>
+  <link rel="stylesheet" href="../static/css/booking_style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container">
+    <div class="title">Interior Design Booking</div>
+    <div class="content">
+      <form action="submit_booking.php" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" name="fullname" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="tel" name="phone" placeholder="Enter your number" pattern="[0-9]{10}" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Preferred Date</span>
+            <input type="date" name="preferred_date" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Additional Comments</span>
+            <textarea name="comments" rows="4" placeholder="Enter any additional comments"></textarea>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Book Appointment">
+          
+          <a href="../templates/index.html" class="back-btn">Back</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

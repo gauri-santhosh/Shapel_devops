@@ -1,0 +1,27 @@
+services:
+  db:
+    image: postgres
+    container_name: locall_pgdb
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: Manju123#
+    volumes:
+      - local_pgdata:/var/lib/postgresql/data
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin4_containerr
+    restart: always
+    ports:
+      - "8889:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: gaureesanthosh@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: Manju123#
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+
+volumes:
+  local_pgdata:
+  pgadmin-data:
