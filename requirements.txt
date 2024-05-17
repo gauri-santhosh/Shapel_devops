@@ -1,0 +1,12 @@
+Flask
+selenium
+psycopg2
+psycopg2-binary
+regex
+requests
+requests-toolbelt
+watchdog
+Jinja2
+Werkzeug
+urllib3
+pytest

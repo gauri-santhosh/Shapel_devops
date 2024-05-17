@@ -9,10 +9,10 @@ def authenticate_user(username, password):
     try:
         # Connect to your PostgreSQL database
         conn = psycopg2.connect(
-            dbname="shapel",
-            user="admin",
+            dbname="postgres",
+            user="postgres",
             password="Manju123#",
-            host="locall_pgdb",
+            host="localhost",
             port="5432"
         )
 
@@ -83,10 +83,10 @@ def register():
         try:
             # Connect to your PostgreSQL database
             conn = psycopg2.connect(
-                dbname="shapel",
-                user="admin",
+                dbname="postgres",
+                user="postgres",
                 password="Manju123#",
-                host="locall_pgdb",
+                host="localhost",
                 port="5432"
             )
 
