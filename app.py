@@ -12,7 +12,7 @@ def authenticate_user(username, password):
             dbname="postgres",
             user="postgres",
             password="Manju123#",
-            host="localhost",
+            host="host.docker.internal",
             port="5432"
         )
 
@@ -86,7 +86,7 @@ def register():
                 dbname="postgres",
                 user="postgres",
                 password="Manju123#",
-                host="localhost",
+                host="host.docker.internal",
                 port="5432"
             )
 
@@ -148,5 +148,5 @@ def booking():
     else:
         return render_template('booking.html')
 
-if __name__ == '_main_':
+if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5000)
